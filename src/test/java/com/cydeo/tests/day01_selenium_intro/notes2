@@ -1,0 +1,38 @@
+
+8 Locators (locator a set of elements):
+
+1) id driver.findElement(By.id("..."))
+if it's not dynamic, it's safe to use. We can check it by refreshing the page
+
+2) name driver.findElement(By.name("..."))
+returns the first matching element
+does NOT have to be unique
+
+3) className driver.findElement(By.className("..."))
+returns first "class" attribute value
+does NOT have to be unique
+
+4) tagName
+used when locating more than one web element
+
+5) linkText
+find and return the Link by its text is used to locate web element
+the text between the opening and closing tag
+only works with <a> tags only (hyperlink)
+looks for exact text match
+
+6) partialLinkText
+looks for partial text match
+
+-css
+-zpath
+
+findElement locator (driver.findElement(By.id("...")));:
+used to locate a single web element
+returns a single web-element
+if can not locate or page openning slow compare to browser will return NoSuchElementException
+
+SendKeys() method Keys.ENTER:
+writes and clicks
+
+

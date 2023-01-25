@@ -1,0 +1,52 @@
+What is Selenium?
+- is basically a bunch of libraries that allows us to automate browsers
+
+What is Maven?
+- is a build automation tool
+- comes with certain folders and file structures
+
+What is build?
+- is repeating steps when we create a maven project
+- and also some other repeating steps until we deploy the project
+
+src
+- main (developers use for source code)
+- test (developers use to run user tests)
+- pom.xml
+
+What is pom.xml file?
+pom = "project object model"
+xml = "extensible mark up language"
+- the most important file in a maven project
+- we manage (add,remove, change) versions of our dependencies
+
+is Maven for testers?
+no
+
+What version of Selenium are you using ?
+Selenium 4.6.0
+
+What are dependencies?
+they are jar files
+we add to pom.xml file, Maven automatically downloads our jar files
+in the version we provide
+
+Where does Maven downloads the dependencies to?
+For Windows:
+1. Go to Run:
+2. c:\Users\YourUserName\.m2
+3. press enter
+
+For Mac:
+1. Open Go (from top of the screen)
+2. Go to folder
+3. Enter: ~/.m2
+
+Where do we get our "expected data" from?
+- Documentation
+- REquirement documents
+
+Where do you get our "actual" data?
+- from the browser
+
+

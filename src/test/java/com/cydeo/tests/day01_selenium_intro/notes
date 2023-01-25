@@ -1,0 +1,53 @@
+
+What should we pay attention in a Selenium method?
+1 - What does this method do
+2 - What does this method return? Does it have a return type?
+3 - Does it accept argument?
+4 - Does it throw a specific exception?
+
+---> .get(STRING URL) method
+will get a give url
+no return type
+accept argument for url
+can throw IllegalArgumentException if not provided with correct https /// URL
+
+---> Basic navigations:
+We combine navigate() method with some other methods  to achieve basic navigations.
+navigate().forward()
+navigate().back()
+navigate().refresh()
+navigate().to()
+
+---> .getTitle();
+gets the title
+returns a String
+no argument
+no exceptions
+good for confirming you are on the intended page
+
+---> .Thread.sleep();
+not Selenium method
+comes from Java
+stops codes execution for given direction
+
+--> .getCurrentUrl();
+gets url
+returns String
+no argument
+no exceptions
+
+--> manage().window.maximize(); // better to use, works for MAc and Windows
+manage().window().fullscreen(); // for only MAC
+opens full screen window
+
+
+--> driver.close(); // closes only the currently focused window/tab
+driver.quit(); // closes all of the opened browsers & end the session
+
+New Session is created everytime we run our Selenium code.
+We can end the session using driver.quite()
+or it will naturaly end when the code execution is done
+
+
+
+
